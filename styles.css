@@ -1,0 +1,81 @@
+:root {
+     --mainColor: #7c7a7a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--mainColor);
+}
+
+.dancefloor {
+    min-height: 100vh;
+    position: relative;
+}
+
+.dancefloor__button {
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+    border-radius: 2px;
+    padding: 20px 10px;
+    color: var(--mainColor);
+    cursor: pointer;
+    user-select: none; 
+}
+
+.dancefloor__buttons-container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.dancefloor__canvas-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dancefloor__canvas-container canvas {
+    cursor: pointer;
+}
+
+.dancefloor__modal {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.dancefloor__modal-card {
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dancefloor__modal-card input {
+    margin-bottom: 20px;
+}
+
+.dancefloor__current-settings {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dancefloor__current-settings-item {
+    margin: 0 10px;
+    user-select: none;
+}

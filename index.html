@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancefloor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dancefloor">
+        <div class="dancefloor__current-settings">
+            <span class="dancefloor__current-settings-item">Current rows: <span id="current-rows-container">0</span></span>
+            <span class="dancefloor__current-settings-item">Current columns: <span id="current-columns-container">0</span></span>
+        </div>
+        <div class="dancefloor__buttons-container">
+            <button id="col-btn" class="dancefloor__button">Set column qunatity</button>
+            <button id="row-btn" class="dancefloor__button">Set row qunatity</button>
+            <button id="generate-btn" class="dancefloor__button">Generate</button>
+        </div>
+        <div class="dancefloor__canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="modal" class="dancefloor__modal">
+            <div class="dancefloor__modal-card">
+                <p>Please pass value (cannot be 0 or empty):</p>
+                <input id="modal-input" type="number">
+                <button class="dancefloor__button " id="enter-value">Enter</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
